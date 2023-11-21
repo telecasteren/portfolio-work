@@ -1,0 +1,116 @@
+
+
+@import url("css/bio-styles.css");
+@import url("css/index-styles.css");
+
+/*---------
+Global styles
+-------------*/
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: rgba(252, 236, 196, 1);
+}
+
+* {
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
+    color: rgba(42, 44, 31, 1);
+}
+
+nav li:hover {
+    color: rgba(111, 113, 90, 1);
+}
+
+#current li {
+    color: rgba(111, 113, 90, 1);
+}
+
+h1, h3 {
+    text-align: center;
+    color: rgba(42, 44, 31, 1);
+}
+
+h1 {
+    font-size: 108px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: rgba(42, 44, 31, 1);
+    border-color: rgba(111, 113, 90, 1);
+    background-color: rgba(252, 236, 196, 1);
+    z-index: 20;
+}
+
+button a {
+    color: rgba(42, 44, 31, 1);
+}
+
+button:hover {
+    background-color: rgba(81, 84, 65, 1);
+}
+
+/*--------
+Home page
+--------------*/
+
+.home-btn {
+    position: relative;
+    left: 680px;
+}
+/*---------------------------*/
+
+
+/*--------
+Biography page
+--------------*/
+
+.bio-img {
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.column p {
+    margin-left: 60px;
+}
+/*---------------------------*/
+
+
+/*--------
+Portfolio page
+--------------*/
+
+.port-btn {
+    position: relative;
+    left: 650px;
+}
