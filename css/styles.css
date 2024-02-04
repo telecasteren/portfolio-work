@@ -1,0 +1,114 @@
+/*@import url("css/bio-styles.css");*/
+
+@import url(news.css);
+@import url(index.css);
+@import url(portfolio.css);
+@import url(biography.css);
+
+:root {
+  --white-yellow: rgba(255, 252, 246, 1);
+  --beige: rgba(252, 236, 196, 1); /*- currently not in use -*/
+  --dark-green: rgba(42, 44, 31, 1);
+  --light-green: rgba(130, 157, 114, 1); /*rgba(111, 113, 90, 1);*/
+  --clear-green: rgba(52, 79, 35, 1);
+}
+
+/*----------
+Global / common styles
+
+written for screens around 400px
+---------------------------------*/
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: var(--white-yellow);
+}
+
+* {
+  text-decoration: none;
+}
+
+nav.nav-bar {
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+nav li {
+  font-size: 20px;
+  list-style-type: none;
+  /*display: inline;*/
+  margin-right: 20px;
+  color: var(--clear-green);
+}
+
+nav li:hover {
+  color: var(--light-green);
+}
+
+#current li {
+  color: var(--light-green);
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: var(--light-green);
+}
+
+h1 {
+  font-size: 68px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--clear-green);
+}
+
+button {
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 16px;
+  font-size: 22px;
+  border-color: var(--clear-green);
+  background-color: var(--clear-green);
+  z-index: 20;
+}
+
+button a {
+  color: var(--white-yellow);
+}
+
+button:hover {
+  border-color: var(--light-green);
+  background-color: var(--light-green);
+}
+
+/*--
+Media queries for larger screens
+---------------------------------*/
+
+/*- COMMON STYLES -*/
+@media screen and (min-width: 600px) {
+  nav li {
+    font-size: 24px;
+    display: inline;
+  }
+
+  h1 {
+    font-size: 108px;
+  }
+}
+
+/*--
+Media queries for smaller screens
+---------------------------------*/

@@ -1,0 +1,65 @@
+/*--------
+Biography page
+--------------*/
+
+.bio-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bio-section h1 {
+  font-size: 28px;
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  justify-self: center;
+}
+
+.bio-img {
+  margin-top: 5px;
+  margin-left: 20px;
+  width: 300px;
+  height: auto;
+  z-index: -1;
+}
+
+.column {
+  margin: 20px;
+}
+
+hr {
+  position: relative;
+  width: 200px; /*- larger screens 1200px; -*/
+  border: 1px solid;
+}
+/*---------------------------*/
+
+@media screen and (min-width: 450px) {
+  .bio-img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bio-img {
+    width: 500px;
+    height: auto;
+  }
+
+  .bio-section h1 {
+    font-size: 45px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bio-img {
+    width: 680px;
+    height: auto;
+  }
+
+  .bio-section h1 {
+    font-size: 55px;
+  }
+}
