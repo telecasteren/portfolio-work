@@ -82,6 +82,7 @@ button {
   border-color: var(--clear-green);
   background-color: var(--clear-green);
   z-index: 20;
+  cursor: pointer;
 }
 
 button a {
@@ -106,6 +107,11 @@ Media queries for larger screens
 
   h1 {
     font-size: 108px;
+  }
+
+  button {
+    padding: 18px;
+    max-width: 400px;
   }
 }
 
