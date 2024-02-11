@@ -9,11 +9,24 @@ Portfolio page
 
 .portfolio-p {
   display: grid;
-  justify-content: center;
   margin-left: 10px;
   margin-bottom: 30px;
 }
 
 /*- Media queries for larger screens -*/
+
+@media screen and (min-width: 600px) {
+  .port-section {
+    justify-content: center;
+  }
+ }
+
+@media screen and (min-width: 1000px) {
+
+  .portfolio-p {
+    width: 600px;
+  }
+ 
+}
 
 /*- Media queries for smaller screens -*/
