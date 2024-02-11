@@ -6,11 +6,10 @@
 @import url(biography.css);
 
 :root {
-  --white-yellow: rgba(255, 252, 246, 1);
-  --beige: rgba(252, 236, 196, 1); /*- currently not in use -*/
-  --dark-green: rgba(42, 44, 31, 1);
-  --light-green: rgba(130, 157, 114, 1); /*rgba(111, 113, 90, 1);*/
-  --clear-green: rgba(52, 79, 35, 1);
+  --white-yellow: #fffcf6;
+  --dark-green: #2a2c1f;
+  --light-green: #829d72;
+  --clear-green: #344f23;
 }
 
 /*----------
@@ -43,7 +42,6 @@ nav.nav-bar {
 nav li {
   font-size: 20px;
   list-style-type: none;
-  /*display: inline;*/
   margin-right: 20px;
   color: var(--clear-green);
 }
@@ -81,8 +79,13 @@ button {
   font-size: 22px;
   border-color: var(--clear-green);
   background-color: var(--clear-green);
-  z-index: 20;
   cursor: pointer;
+}
+
+.button {
+  width: 250px;
+  height: auto;
+  color: var(--white-yellow);
 }
 
 button a {
@@ -98,7 +101,6 @@ button:hover {
 Media queries for larger screens
 ---------------------------------*/
 
-/*- COMMON STYLES -*/
 @media screen and (min-width: 600px) {
   nav li {
     font-size: 24px;

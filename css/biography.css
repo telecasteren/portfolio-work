@@ -27,6 +27,11 @@ Biography page
   margin: 20px;
 }
 
+.bio-btn {
+  display: grid;
+  justify-content: center;
+}
+
 hr {
   position: relative;
   width: 200px; /*- larger screens 1200px; -*/

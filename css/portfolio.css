@@ -19,14 +19,12 @@ Portfolio page
   .port-section {
     justify-content: center;
   }
- }
+}
 
 @media screen and (min-width: 1000px) {
-
   .portfolio-p {
     width: 600px;
   }
- 
 }
 
 /*- Media queries for smaller screens -*/
