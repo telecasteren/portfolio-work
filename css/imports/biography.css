@@ -22,15 +22,13 @@ Biography page
 .bio-title {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  justify-self: center;
-
   margin-right: 25%;
 }
 
 .bio-img {
   margin-top: 8%;
-  justify-self: center;
-  width: 70%;
+  margin-left: 8%;
+  width: 400px; /*70%; */
   min-width: 100px;
   height: auto;
 }
@@ -53,4 +51,29 @@ hr {
   position: relative;
   width: 200px;
   border: 1px solid;
+}
+
+/*------------
+Media queries:
+-------------*/
+
+@media screen and (max-width: 665px) {
+  .bio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bio-title {
+    writing-mode: horizontal-tb;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bio-title {
+    justify-self: center;
+  }
+
+  .bio-img {
+    justify-self: center;
+  }
 }
