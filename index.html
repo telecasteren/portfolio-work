@@ -4,25 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome page for Tele Caster Nilsen's website portfolio."
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Home page</title>
+    <title>Tele Caster Nilsen's portfolio | Home page</title>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="js/pages/index.js"></script>
   </head>
   <body>
-    <nav class="nav-bar">
+    <main>
+      <nav class="nav-bar">
+        <ul>
+          <a href="/" id="current"><li>home</li></a>
+          <a href="pages/portfolio/"><li>portfolio</li></a>
+          <a href="pages/biography/"><li>biography</li></a>
+          <a href="pages/news/"><li>whats brewing</li></a>
+        </ul>
+      </nav>
+      <div class="alert-container"></div>
+      <section class="main-section">
+        <!-- <div class="spinner"></div> -->
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        © 2023
+        <a href="https://telecasteren-portfolio.netlify.app/">TeleCasteren™</a>.
+        All Rights Reserved.
+      </span>
       <ul>
-        <a href="index.html" id="current"><li>home</li></a>
-        <a href="portfolio.html"><li>portfolio</li></a>
-        <a href="bio.html"><li>biography</li></a>
-        <a href="news.html"><li>whats brewing</li></a>
+        <li>
+          <a href="pages/biography/">About</a>
+        </li>
+        <li>
+          <a href="pages/portfolio/">Portfolio</a>
+        </li>
+        <li>
+          <a href="pages/news/">News</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
-    </nav>
-
-    <section class="main-section">
-      <h1>welcome</h1>
-
-      <div class="triangle-img">
-        <img src="images/triangle-symbol-light.png" />
-      </div>
-    </section>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,10 @@
+/*--------
+Portfolio page
+--------------*/
+
+.portfolio-p {
+  display: grid;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}

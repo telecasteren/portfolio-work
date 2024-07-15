@@ -1,0 +1,18 @@
+:root {
+  --white-yellow: #fffcf6;
+  --dark-green: #2a2c1f;
+  --light-green: #829d72;
+  --clear-green: #344f23;
+
+  /*- special actions -*/
+  --alert-box-shadow: rgba(0, 0, 0, 0.3);
+  --alert-info: rgba(0, 0, 0, 0.5);
+  --alert-success: rgba(19, 72, 17, 0.367);
+  --alert-warning: rgba(131, 100, 0, 0.523);
+  --alert-error: rgba(139, 0, 0, 0.302);
+  --footer-white: #fffcf684;
+  --footer-grey: #2d2e33;
+  --footer-shadow: rgb(45, 46, 51, 0.1);
+
+  font-size: calc(1rem + 0.25vw);
+}

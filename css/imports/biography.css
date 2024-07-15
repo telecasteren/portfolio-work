@@ -1,0 +1,56 @@
+/*--------
+Biography page
+--------------*/
+
+.bio-columns {
+  display: grid;
+}
+
+.bio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 20px solid var(--light-green);
+  height: 100%;
+  width: 80%;
+  justify-self: center;
+}
+
+.bio-titleDiv {
+  display: grid;
+}
+
+.bio-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  justify-self: center;
+
+  margin-right: 25%;
+}
+
+.bio-img {
+  margin-top: 8%;
+  justify-self: center;
+  width: 70%;
+  min-width: 100px;
+  height: auto;
+}
+
+.column {
+  margin-top: 2%;
+  padding-top: 2%;
+  max-width: 1000px;
+  justify-self: center;
+  position: relative;
+  line-height: 1.5;
+}
+
+.bio-btn {
+  display: grid;
+  justify-content: center;
+}
+
+hr {
+  position: relative;
+  width: 200px;
+  border: 1px solid;
+}
