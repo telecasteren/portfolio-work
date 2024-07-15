@@ -1,0 +1,85 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--footer-grey);
+  border-top: 1px solid var(--footer-grey);
+  box-shadow: 0 -1px 5px var(--footer-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer span {
+  font-size: 14px;
+  color: var(--footer-white);
+  text-align: center;
+}
+
+footer span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--footer-white);
+}
+
+footer ul li {
+  margin-right: 16px;
+}
+
+footer ul li:last-child {
+  margin-right: 50px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer.visible {
+  transform: translateY(0);
+}
+
+/*--
+Media queries for FOOTER
+---------------------------------*/
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  footer ul li {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  footer span {
+    text-align: left;
+  }
+}

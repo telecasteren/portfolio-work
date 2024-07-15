@@ -1,0 +1,37 @@
+nav.nav-bar {
+  margin-top: 20px;
+  margin-left: 2%;
+}
+
+nav li {
+  font-size: 28px;
+  margin-bottom: 15px;
+  list-style-type: none;
+  color: var(--clear-green);
+}
+
+nav li:hover {
+  color: var(--light-green);
+}
+
+#current li {
+  color: var(--light-green);
+}
+
+/*--
+Media queries
+--------------*/
+
+@media screen and (min-width: 600px) {
+  nav li {
+    font-size: 22px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    display: inline;
+  }
+
+  button {
+    padding: 18px;
+    max-width: 400px;
+  }
+}
