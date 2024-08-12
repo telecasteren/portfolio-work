@@ -48,6 +48,38 @@ Biography page
   justify-content: center;
 }
 
+.textButton {
+  position: absolute;
+  border-radius: 1;
+  border: 2px solid var(--faded-green);
+  background-color: var(--white-yellow);
+  color: var(--light-green);
+  text-align: left;
+  margin-left: 0;
+  margin-top: -18px;
+  padding: 10px;
+  max-width: 1000px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.textButton:hover {
+  border-color: var(--faded-green);
+  background-color: var(--faded-green);
+}
+
+.hiddenText {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+
+.visibleText {
+  max-height: 1200px;
+  transition: max-height 0.5s ease-in;
+}
+
 hr {
   position: relative;
   width: 200px;

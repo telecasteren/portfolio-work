@@ -1,5 +1,6 @@
 // Main UI:
 export const mainSection = document.querySelector(".main-section");
+export const spinner = document.querySelector(".spinner");
 
 // URL's:
 export const projectURLs = {

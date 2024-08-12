@@ -2,10 +2,12 @@ import { titleMessage } from "../../components/staticUI/titleMsg.js";
 import { mainSection } from "../../data/constants.js";
 import { commonButton } from "../../components/staticUI/reusableButton.js";
 import { textColumns } from "./textColumns.js";
+import { displayBioText } from "./sections.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   topContent();
   textColumns();
+  displayBioText();
 
   setTimeout(() => {
     commonButton("Take a look", "bio-btn", "/pages/portfolio/");
@@ -21,7 +23,7 @@ function topContent() {
   imgDiv.classList.add("bio-columns");
   imgElement.classList.add("bio-img");
   imgElement.src = "/images/fineshmecker.jpeg";
-  imgElement.alt = "background image of the page author";
+  imgElement.alt = "A fineschmecker person drinking a cocktail";
 
   const titleDiv = document.createElement("div");
   titleDiv.classList.add("bio-titleDiv");

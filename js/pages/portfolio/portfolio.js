@@ -1,7 +1,7 @@
-import projects from "/js/data/projects.js";
+import projects from "/js/data/objects/projects.js";
 import { projectURLs, mainSection } from "../../data/constants.js";
 import { commonButton } from "../../components/staticUI/reusableButton.js";
-import { alertMessage } from "../../components/messages.js";
+import { alertMessage } from "../../components/validation/messages.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   renderPortfolio(projects);
