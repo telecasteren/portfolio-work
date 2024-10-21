@@ -15,14 +15,19 @@ function renderPortfolio(projects) {
       const projectDescription = project.description || "No description found.";
       const projectTitle = project.title || "Unknown title";
 
+      const portfolioDiv = document.createElement("div");
+      portfolioDiv.classList.add("portfolioDiv");
+
       const projectURL = projectURLs[project.id] || "/404";
-      commonButton(projectTitle, "", projectURL, true);
+      const buttonElement = commonButton(projectTitle, "", projectURL, true);
 
       const pElement = document.createElement("p");
       pElement.classList.add("portfolio-p");
       pElement.innerHTML = projectDescription;
 
-      mainSection.appendChild(pElement);
+      portfolioDiv.appendChild(buttonElement);
+      portfolioDiv.appendChild(pElement);
+      mainSection.appendChild(portfolioDiv);
     });
   } catch (error) {
     alertMessage("Something went wrong when loading portfolio", "error");

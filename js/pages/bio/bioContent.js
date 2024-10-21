@@ -1,12 +1,10 @@
 import { titleMessage } from "../../components/staticUI/titleMsg.js";
 import { mainSection } from "../../data/constants.js";
 import { commonButton } from "../../components/staticUI/reusableButton.js";
-import { textColumns } from "./textColumns.js";
 import { displayBioText } from "./sections.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   topContent();
-  textColumns();
   displayBioText();
 
   setTimeout(() => {

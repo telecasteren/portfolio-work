@@ -1,6 +1,6 @@
 const skills = {
-  Skillset: {
+  skillset: {
     Programming: ["Javascript", "HTML", "CSS", "React", "SQL"],
-    Business: ["Project management", "Customer service"],
+    Business: ["Project management", "Customer service", "Team lead"],
   },
 };

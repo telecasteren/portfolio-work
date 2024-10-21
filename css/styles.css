@@ -4,10 +4,11 @@
 @import url(imports/components/spinner.css);
 @import url(imports/components/footer.css);
 @import url(imports/components/nav-menu.css);
-@import url(imports/news.css);
-@import url(imports/home.css);
-@import url(imports/portfolio.css);
-@import url(imports/biography.css);
+
+@import url(imports/pages/news.css);
+@import url(imports/pages/home.css);
+@import url(imports/pages/portfolio.css);
+@import url(imports/pages/biography.css);
 
 /*----------
 Global / common styles

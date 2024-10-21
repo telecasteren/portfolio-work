@@ -47,6 +47,13 @@ export function displayBioText() {
           pElement.style.maxHeight = "0px";
           currentVisibleText = null;
         }
+
+        if (currentVisibleText) {
+          columnDiv.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
       });
     });
   } catch (error) {

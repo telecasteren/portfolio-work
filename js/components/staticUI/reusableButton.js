@@ -1,5 +1,3 @@
-import { mainSection } from "../../data/constants.js";
-
 export function commonButton(
   text,
   additionalClass = "",
@@ -7,6 +5,7 @@ export function commonButton(
   openInNewTab = false
 ) {
   const buttonDiv = document.createElement("div");
+  buttonDiv.classList.add("buttonDiv");
 
   if (additionalClass) {
     const classes = additionalClass.split(" ");
@@ -28,5 +27,5 @@ export function commonButton(
   });
 
   buttonDiv.appendChild(button);
-  mainSection.appendChild(buttonDiv);
+  return buttonDiv;
 }

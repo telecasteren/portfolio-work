@@ -1,5 +1,14 @@
-{
-  "paragraph1": "These are the current projects I am working on.",
-  "paragraph2": "I'm continuously working on toning my skillset, and right now I'm focusing on:\n<b>Frameworks: React</b>, for my own projects\n<b>Database structures and SQL</b>, for my day to day workplace\n<b>Acquiring tools</b> to become robust",
-  "paragraph3": ""
-}
+[
+  {
+    "title": "Title for Paragraph 1",
+    "paragraph": "Content of Paragraph 1"
+  },
+  {
+    "title": "Title for Paragraph 2",
+    "paragraph": "Content of Paragraph 2"
+  },
+  {
+    "title": "Title for Paragraph 3",
+    "paragraph": "Content of Paragraph 3"
+  }
+]

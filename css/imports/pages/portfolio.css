@@ -1,0 +1,26 @@
+/*--------
+Portfolio page
+--------------*/
+
+.portfolio-p {
+  display: grid;
+  margin-bottom: 5%;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.portfolioDiv {
+  margin-top: 10%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .portfolioDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

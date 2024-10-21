@@ -7,7 +7,7 @@ Biography page
 }
 
 .column {
-  margin: 6%;
+  margin: 5%;
   padding-top: 1%;
   max-width: 1000px;
   justify-self: center;
@@ -50,13 +50,12 @@ Biography page
 
 .textButton {
   position: absolute;
-  border-radius: 1;
+  border-radius: 0;
   border: 2px solid var(--faded-green);
   background-color: var(--white-yellow);
   color: var(--light-green);
   text-align: left;
   margin-left: 0;
-  margin-top: -18px;
   padding: 10px;
   max-width: 1000px;
   width: 100%;
@@ -70,20 +69,17 @@ Biography page
 }
 
 .hiddenText {
+  margin-top: 6%;
   max-height: 0;
+  transition: max-height 0.5s ease-in-out;
   overflow: hidden;
-  transition: max-height 0.5s ease-in;
 }
 
 .visibleText {
+  margin-top: 6%;
   max-height: 1200px;
-  transition: max-height 0.5s ease-in;
-}
-
-hr {
-  position: relative;
-  width: 200px;
-  border: 1px solid;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 /*------------
@@ -95,6 +91,14 @@ Media queries:
     writing-mode: horizontal-tb;
     margin-right: 0;
     font-size: 280%;
+  }
+
+  .hiddenText {
+    margin-top: 20%;
+  }
+
+  .visibleText {
+    margin-top: 20%;
   }
 }
 
@@ -114,6 +118,14 @@ Media queries:
     margin-left: 0;
     width: 80%;
     justify-self: center;
+  }
+
+  .hiddenText {
+    margin-top: 15%;
+  }
+
+  .visibleText {
+    margin-top: 15%;
   }
 }
 

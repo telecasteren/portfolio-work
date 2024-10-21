@@ -1,4 +1,5 @@
 import { mainSection } from "../../data/constants.js";
+import { alertMessage } from "/js/components/validation/messages.js";
 
 export async function textColumns() {
   try {
@@ -8,16 +9,19 @@ export async function textColumns() {
 
     spinner.style.display = "none";
 
-    Object.keys(data).forEach((key) => {
+    data.forEach((item, index) => {
       const columnDiv = document.createElement("div");
       columnDiv.classList.add("column");
 
+      const titleElement = document.createElement("h2");
+      titleElement.innerHTML = item.title;
+
       const pElement = document.createElement("p");
-      pElement.id = key;
-      pElement.innerHTML = data[key].replace(/\n/g, "<br /><br />");
+      pElement.id = `paragraph-${index}`;
+      pElement.innerHTML = item.paragraph.replace(/\n/g, "<br /><br />");
 
+      columnDiv.appendChild(titleElement);
       columnDiv.appendChild(pElement);
-
       mainSection.appendChild(columnDiv);
     });
   } catch (error) {

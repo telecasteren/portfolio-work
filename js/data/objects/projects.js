@@ -20,8 +20,7 @@ const projects = [
   {
     id: "project4",
     title: "News",
-    description:
-      "<b>News</b>What I am currently working on and projects to come.",
+    description: "<b>News</b>Ongoing brewing and other stuff.",
   },
 ];
 

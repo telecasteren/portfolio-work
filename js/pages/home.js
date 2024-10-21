@@ -2,8 +2,11 @@ import { titleMessage } from "../components/staticUI/titleMsg.js";
 import { mainSection } from "../data/constants.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  titleMessage("welcome!");
   welcomeImg();
+
+  setTimeout(() => {
+    titleMessage("welcome!");
+  }, 800);
 });
 
 function welcomeImg() {
