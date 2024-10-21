@@ -3,10 +3,7 @@ import { mainSection } from "../data/constants.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   welcomeImg();
-
-  setTimeout(() => {
-    titleMessage("welcome!");
-  }, 800);
+  titleMessage("welcome!");
 });
 
 function welcomeImg() {
