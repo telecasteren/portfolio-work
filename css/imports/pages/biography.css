@@ -8,7 +8,7 @@ Biography page
 
 .column {
   margin: 5%;
-  padding-top: 1%;
+  padding-top: 5%;
   max-width: 1000px;
   justify-self: center;
   position: relative;
@@ -69,14 +69,14 @@ Biography page
 }
 
 .hiddenText {
-  margin-top: 6%;
+  /* margin-top: 6%; */
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
 }
 
 .visibleText {
-  margin-top: 6%;
+  /* margin-top: 6%; */
   max-height: 1200px;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;

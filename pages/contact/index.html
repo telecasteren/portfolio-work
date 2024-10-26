@@ -25,11 +25,9 @@
     <main>
       <div class="alert-container"></div>
       <section class="main-section">
-        <!-- <div class="spinner"></div> -->
-
         <div class="form-container">
           <form action="/action_page.php">
-            <label for="fname">Your Name</label>
+            <label hidden for="fname">Your Name</label>
             <input
               type="text"
               id="fname"
@@ -39,7 +37,7 @@
               autocomplete="name"
             />
 
-            <label for="cname">Company Name</label>
+            <label hidden for="cname">Company Name</label>
             <input
               type="text"
               id="cname"
@@ -47,7 +45,7 @@
               placeholder="company name (optional)"
             />
 
-            <label for="email">Your Email</label>
+            <label hidden for="email">Your Email</label>
             <input
               type="email"
               id="email"
@@ -56,15 +54,15 @@
               autocomplete="email"
             />
 
-            <label for="inquiry">Subject</label>
+            <label hidden for="inquiry">Subject</label>
             <select id="inquiry" name="inquiry" required>
-              <option value="required">-</option>
+              <option value="required">Subject</option>
               <option value="hello">Talk about projects</option>
               <option value="work">Hire me</option>
               <option value="other">Other</option>
             </select>
 
-            <label for="message">Message</label>
+            <label hidden for="message">Message</label>
             <textarea
               id="message"
               name="message"

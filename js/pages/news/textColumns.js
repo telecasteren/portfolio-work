@@ -11,7 +11,7 @@ export async function textColumns() {
 
     data.forEach((item, index) => {
       const columnDiv = document.createElement("div");
-      columnDiv.classList.add("column");
+      columnDiv.classList.add("newsColumn");
 
       const titleElement = document.createElement("h2");
       titleElement.innerHTML = item.title;

@@ -22,5 +22,6 @@ Portfolio page
   .portfolioDiv {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }

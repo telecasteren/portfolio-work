@@ -1,0 +1,8 @@
+.newsColumn {
+  margin-bottom: 5%;
+  max-width: 1000px;
+  justify-self: center;
+  position: relative;
+  line-height: 1.5;
+  text-align: justify;
+}
