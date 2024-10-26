@@ -19,7 +19,10 @@ function renderPortfolio(projects) {
       portfolioDiv.classList.add("portfolioDiv");
 
       const projectURL = projectURLs[project.id] || "/404";
-      const buttonElement = commonButton(projectTitle, "", projectURL, true);
+      const buttonElement =
+        projectTitle === "News"
+          ? commonButton(projectTitle, "", projectURL)
+          : commonButton(projectTitle, "", projectURL, true);
 
       const pElement = document.createElement("p");
       pElement.classList.add("portfolio-p");

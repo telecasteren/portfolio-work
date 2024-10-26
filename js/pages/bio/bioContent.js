@@ -1,15 +1,10 @@
 import { titleMessage } from "../../components/staticUI/titleMsg.js";
 import { mainSection } from "../../data/constants.js";
-import { commonButton } from "../../components/staticUI/reusableButton.js";
 import { displayBioText } from "./sections.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   topContent();
   displayBioText();
-
-  setTimeout(() => {
-    commonButton("Take a look", "bio-btn", "/pages/portfolio/");
-  }, 100);
 });
 
 function topContent() {

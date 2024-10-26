@@ -8,6 +8,8 @@ export function displayBioText() {
   const pTitlesArray = Object.values(pTitles);
   const pTextArray = Object.values(pText);
 
+  mainSection.classList.add("bioMainSection");
+
   let currentVisibleText = null;
 
   try {

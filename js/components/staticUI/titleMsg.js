@@ -7,7 +7,7 @@ export function titleMessage(
   shouldPrepend = true
 ) {
   const title = document.createElement("h1");
-  title.classList.add("title", "landingTitle");
+  title.classList.add("title");
   title.innerHTML = message;
 
   if (additionalClass) {

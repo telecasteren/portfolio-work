@@ -1,8 +1,8 @@
 /*---------------
-Index | Home page styles
+Landing | Home page styles
 -------------------------*/
 
-.triangle-img {
+/* .triangle-img {
   display: grid;
   justify-content: center;
   margin-bottom: 5%;
@@ -24,22 +24,86 @@ Index | Home page styles
     transform: translateY(0);
     opacity: 1;
   }
+} */
+
+/*- Top content section -*/
+
+.landingSection,
+.showcaseSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 5%;
 }
 
-/*--
-Media queries for larger screens
-----------------------------------*/
+.landingTitle {
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 8%;
+}
 
-@media screen and (min-width: 600px) {
-  .triangle-img img {
-    width: 500px;
-    height: auto;
+.topText {
+  justify-self: center;
+  align-self: center;
+  font-size: 0.8rem;
+  margin: 2%;
+}
+
+.topText p {
+  color: var(--light-green);
+}
+
+.imgDiv-landing {
+  display: grid;
+  justify-content: center;
+}
+
+.imgEl-landing {
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid;
+}
+
+@media screen and (max-width: 1000px) {
+  .landingSection,
+  .showcaseSection {
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-items: center;
+    margin: 5%;
   }
 }
 
-@media screen and (min-width: 800px) {
-  .triangle-img img {
-    width: unset;
-    height: auto;
-  }
+/*- Showcase section -*/
+
+.showcaseSection {
+  background-color: var(--light-green);
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+
+  opacity: 1;
+  transition: opacity 1s ease-in-out, visibility 1s;
+  visibility: visible;
+}
+
+.columnGrid {
+  justify-self: center;
+
+  width: 100px;
+  height: 100px;
+  background-color: var(--clear-green);
+}
+
+/*- Contact section -*/
+
+.contact-section {
+  margin: 10%;
+  justify-self: center;
+}
+
+.contactButton {
+  margin-top: 10%;
+  justify-self: center;
 }

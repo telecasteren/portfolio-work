@@ -1,4 +1,4 @@
-@import url(imports/components/variables.css);
+@import url(imports/variables/variables.css);
 @import url(imports/components/messages.css);
 @import url(imports/components/contactForm.css);
 @import url(imports/components/spinner.css);
@@ -75,4 +75,11 @@ button:hover {
 .main-section {
   display: grid;
   margin: 4% 2% 120px 2%;
+  justify-self: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main-section {
+    margin: 5%;
+  }
 }

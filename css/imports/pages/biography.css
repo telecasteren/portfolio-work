@@ -6,9 +6,13 @@ Biography page
   display: grid;
 }
 
+.bioMainSection {
+  gap: 50px;
+}
+
 .column {
-  margin: 5%;
-  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   max-width: 1000px;
   justify-self: center;
   position: relative;
@@ -69,14 +73,14 @@ Biography page
 }
 
 .hiddenText {
-  /* margin-top: 6%; */
+  margin-top: 8%;
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
 }
 
 .visibleText {
-  /* margin-top: 6%; */
+  margin-top: 8%;
   max-height: 1200px;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
@@ -86,23 +90,27 @@ Biography page
 Media queries:
 -------------*/
 
-@media screen and (max-width: 510px) {
+@media screen and (min-width: 1000px) {
   .bio-title {
-    writing-mode: horizontal-tb;
-    margin-right: 0;
-    font-size: 280%;
+    justify-self: center;
   }
 
-  .hiddenText {
-    margin-top: 20%;
-  }
-
-  .visibleText {
-    margin-top: 20%;
+  .bio-img {
+    justify-self: center;
   }
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 800px) {
+  .hiddenText {
+    margin-top: 12%;
+  }
+
+  .visibleText {
+    margin-top: 12%;
+  }
+}
+
+@media screen and (max-width: 678px) {
   .bio-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -119,22 +127,30 @@ Media queries:
     width: 80%;
     justify-self: center;
   }
+}
+
+@media screen and (max-width: 510px) {
+  .bio-title {
+    writing-mode: horizontal-tb;
+    margin-right: 0;
+    font-size: 280%;
+  }
 
   .hiddenText {
-    margin-top: 15%;
+    margin-top: 16%;
   }
 
   .visibleText {
-    margin-top: 15%;
+    margin-top: 16%;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .bio-title {
-    justify-self: center;
+@media screen and (max-width: 400px) {
+  .hiddenText {
+    margin-top: 20%;
   }
 
-  .bio-img {
-    justify-self: center;
+  .visibleText {
+    margin-top: 20%;
   }
 }
