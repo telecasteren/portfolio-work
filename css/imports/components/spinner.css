@@ -5,9 +5,9 @@
   width: 150px;
   height: 150px;
   animation: spin 2s linear infinite;
-  margin-left: 42vw;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-bottom: 5%;
+  justify-self: center;
 }
 
 @keyframes spin {
