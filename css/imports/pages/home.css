@@ -40,6 +40,10 @@ Landing | Home page styles
   transform: translate(-10%, 10%) scale(1.2);
 }
 
+.fa-regular.fa-envelope.fa-2xl:hover {
+  color: var(--color-four) !important;
+}
+
 .landingSection,
 .showcaseSection {
   display: grid;

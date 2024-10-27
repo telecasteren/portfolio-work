@@ -14,7 +14,7 @@ export function selectColorClass(projects) {
 
     if (!buttonEl) return;
 
-    const colorClass = colorMap[projectId];
+    const colorClass = colorMap[project.id];
     if (colorClass) {
       buttonEl.classList.add(colorClass);
     }

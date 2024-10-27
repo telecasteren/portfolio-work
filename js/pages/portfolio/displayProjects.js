@@ -25,6 +25,7 @@ export function displayProjects() {
 
   websitesBtn.addEventListener("click", () => {
     renderPortfolio(projects);
+    selectColorClass(projects);
   });
 
   const showcaseBtn = document.createElement("button");
@@ -41,6 +42,4 @@ export function displayProjects() {
   buttonContainer.appendChild(showcaseBtn);
   portfolioSection.appendChild(buttonContainer);
   mainSection.appendChild(portfolioSection);
-
-  selectColorClass(projects);
 }

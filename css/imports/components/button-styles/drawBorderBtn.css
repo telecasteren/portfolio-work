@@ -6,6 +6,8 @@
   max-width: 350px;
   text-align: center;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .drawBtn::before,

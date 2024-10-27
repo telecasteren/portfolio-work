@@ -4,7 +4,13 @@
   --secondary: #344f23;
   --background: #fffcf6;
 
-  --draw-btn: rgb(252, 188, 69); /* original yellow: #ffe593; */
+  /*- Button color-map -*/
+  --color-one: #0000ff;
+  --color-two: #00ff22;
+  --color-three: #ff0000;
+  --color-four: #ffb700;
+
+  --draw-btn: #fcbc45; /* original yellow: #ffe593; */
   --border-btn: #58afd1;
 
   --purple: #1f1a25;
