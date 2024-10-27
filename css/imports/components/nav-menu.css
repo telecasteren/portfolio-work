@@ -7,15 +7,15 @@ nav li {
   font-size: 28px;
   margin-bottom: 15px;
   list-style-type: none;
-  color: var(--clear-green);
+  color: var(--secondary);
 }
 
 nav li:hover {
-  color: var(--light-green);
+  color: var(--primary);
 }
 
 #current li {
-  color: var(--light-green);
+  color: var(--primary);
 }
 
 /*--

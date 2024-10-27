@@ -1,0 +1,42 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+
+  color: var(--secondary);
+}
+
+.button:hover {
+  color: var(--draw-btn);
+}
+
+/*- Color classes -*/
+
+.color-one {
+  border-color: var(--draw-btn) !important;
+}
+
+.color-two {
+  border-color: var(--primary) !important;
+}
+
+.color-three {
+  border-color: var(--purple-test) !important;
+}
+
+.color-four {
+  border-color: blue !important;
+}
+
+.color-five {
+  border-color: red !important;
+}
+
+.color-six {
+  border-color: orange !important;
+}

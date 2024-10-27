@@ -1,0 +1,53 @@
+.drawBtn {
+  box-shadow: inset 0 0 0 4px var(--secondary);
+  color: var(--secondary);
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.drawBtn::before,
+.drawBtn::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.drawBtn::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.drawBtn::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.drawBtn:hover {
+  color: var(--draw-btn);
+}
+
+.drawBtn:hover::before,
+.drawBtn:hover::after {
+  border-color: var(--draw-btn);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.drawBtn:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.drawBtn:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}

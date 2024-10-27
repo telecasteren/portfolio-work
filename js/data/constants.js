@@ -2,6 +2,7 @@
 export const mainSection = document.querySelector(".main-section");
 export const spinner = document.querySelector(".spinner");
 export const landingContent = document.querySelector(".landing-content");
+export const portfolioContent = document.querySelector(".portfolio-content");
 
 // URL's:
 export const projectURLs = {

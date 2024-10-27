@@ -10,12 +10,12 @@ textarea {
   box-sizing: border-box;
   border-radius: 6px;
   border: 1px solid var(--alert-box-shadow);
-  background-color: var(--white-yellow);
+  background-color: var(--background);
 }
 
 input[type="submit"] {
   background-color: var(--footer-grey);
-  color: var(--white-yellow);
+  color: var(--background);
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
@@ -23,13 +23,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: var(--white-yellow);
+  background-color: var(--background);
   color: var(--footer-grey);
 }
 
 .form-container {
-  border-radius: 10px;
-  background-color: var(--light-green);
+  border-radius: 4px;
+  background-color: var(--primary);
   padding: 20px;
   max-width: 1000px;
   justify-self: center;

@@ -1,0 +1,50 @@
+.btn {
+  color: var(--secondary) !important;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 250px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+  }
+}
+
+.lineButton {
+  letter-spacing: 0;
+  display: inline-block;
+  transition: transform 280ms ease-in-out;
+}
+
+.lineButton:hover,
+.lineButton:active {
+  transform: scaleX(1.1);
+}
+
+.lineButton:after,
+.lineButton:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid var(--primary);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.lineButton:hover:after,
+.lineButton:hover:before {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: var(--primary);
+  transition: width 350ms ease-in-out;
+  width: 60%;
+}

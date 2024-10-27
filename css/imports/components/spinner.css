@@ -1,6 +1,6 @@
 .spinner {
-  border: 16px solid var(--light-green);
-  border-top: 16px solid var(--clear-green);
+  border: 16px solid var(--primary);
+  border-top: 16px solid var(--secondary);
   border-radius: 100%;
   width: 150px;
   height: 150px;

@@ -1,13 +1,8 @@
-import projects from "/js/data/objects/projects.js";
 import { projectURLs, mainSection } from "../../data/constants.js";
 import { commonButton } from "../../components/staticUI/reusableButton.js";
 import { alertMessage } from "../../components/validation/messages.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-  renderPortfolio(projects);
-});
-
-function renderPortfolio(projects) {
+export function renderPortfolio(projects) {
   try {
     mainSection.innerHTML = "";
 
@@ -21,8 +16,10 @@ function renderPortfolio(projects) {
       const projectURL = projectURLs[project.id] || "/404";
       const buttonElement =
         projectTitle === "News"
-          ? commonButton(projectTitle, "", projectURL)
-          : commonButton(projectTitle, "", projectURL, true);
+          ? commonButton(projectTitle, "drawBtn", projectURL)
+          : commonButton(projectTitle, "drawBtn", projectURL, true);
+
+      buttonElement.setAttribute("data-project-id", project.id);
 
       const pElement = document.createElement("p");
       pElement.classList.add("portfolio-p");
@@ -33,7 +30,7 @@ function renderPortfolio(projects) {
       mainSection.appendChild(portfolioDiv);
     });
   } catch (error) {
-    alertMessage("Something went wrong when loading portfolio", "error");
+    alertMessage("Something went wrong when loading the content", "error");
     throw error;
   }
 }

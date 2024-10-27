@@ -1,9 +1,13 @@
 :root {
-  --white-yellow: #fffcf6;
-  --dark-green: #2a2c1f;
-  --light-green: #829d72;
-  --clear-green: #344f23;
-  --faded-green: #3c9f020e;
+  --faded: #3c9f020e;
+  --primary: #829d72;
+  --secondary: #344f23;
+  --background: #fffcf6;
+
+  --draw-btn: rgb(252, 188, 69); /* original yellow: #ffe593; */
+  --border-btn: #58afd1;
+
+  --purple: #1f1a25;
 
   /*- special actions -*/
   --alert-box-shadow: rgba(0, 0, 0, 0.3);

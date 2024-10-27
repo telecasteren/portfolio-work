@@ -30,7 +30,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--white-yellow);
+  background-color: var(--background);
   padding: 50px;
   border-radius: 22px;
   box-shadow: 0 5px 20px var(--alert-box-shadow);
@@ -47,7 +47,7 @@
 }
 
 .close-alert {
-  color: var(--clear-green);
+  color: var(--secondary);
   margin-left: 1%;
   float: right;
   font-size: 42px;
@@ -56,5 +56,5 @@
 }
 
 .close-alert:hover {
-  color: var(--light-green);
+  color: var(--primary);
 }

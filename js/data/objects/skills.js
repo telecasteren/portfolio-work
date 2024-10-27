@@ -1,6 +1,14 @@
-const skills = {
-  skillset: {
-    Programming: ["Javascript", "HTML", "CSS", "React", "SQL"],
-    Business: ["Project management", "Customer service", "Team lead"],
+const experience = {
+  skills: {
+    Languages: ["Javascript", "HTML", "CSS", "MYSQL", "SQL"],
+    Frameworks: ["React"],
+    CMS: ["WordPress"],
+    Business: [
+      "Project management",
+      "Customer service",
+      "Training",
+      "Team lead",
+      "Scrum",
+    ],
   },
 };
