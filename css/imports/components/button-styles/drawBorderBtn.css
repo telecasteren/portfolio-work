@@ -34,12 +34,12 @@
 }
 
 .drawBtn:hover {
-  color: var(--draw-btn);
+  color: var(--color-three);
 }
 
 .drawBtn:hover::before,
 .drawBtn:hover::after {
-  border-color: var(--draw-btn);
+  border-color: var(--color-three);
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
   height: 100%;

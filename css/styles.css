@@ -22,7 +22,8 @@ Global / common styles
 ---------------------------------*/
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
 }
@@ -57,6 +58,7 @@ p {
 
 .main-section {
   display: grid;
+  width: 100vw;
   margin: 4% 2% 120px 2%;
   justify-self: center;
   padding-bottom: 20%;
@@ -65,7 +67,6 @@ p {
 @media screen and (max-width: 600px) {
   .main-section {
     margin: 5%;
-    justify-content: center;
     padding-bottom: 50%;
   }
 }

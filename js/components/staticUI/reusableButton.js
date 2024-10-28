@@ -4,19 +4,16 @@ export function commonButton(
   href = "",
   openInNewTab = false
 ) {
-  const buttonDiv = document.createElement("div");
-  buttonDiv.classList.add("buttonDiv");
+  const button = document.createElement("button");
+  button.classList.add("button");
+  button.innerText = text;
 
   if (additionalClass) {
     const classes = additionalClass.split(" ");
     classes.forEach((cls) => {
-      buttonDiv.classList.add(cls);
+      button.classList.add(cls);
     });
   }
-
-  const button = document.createElement("button");
-  button.classList.add("button");
-  button.innerText = text;
 
   button.addEventListener("click", () => {
     if (openInNewTab) {
@@ -26,6 +23,5 @@ export function commonButton(
     }
   });
 
-  buttonDiv.appendChild(button);
-  return buttonDiv;
+  return button;
 }

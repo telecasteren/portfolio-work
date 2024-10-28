@@ -9,12 +9,9 @@ export function displayProjects() {
   const portfolioSection = document.createElement("section");
   portfolioSection.classList.add("portfolioSection");
 
-  const welcomeMessage = document.createElement("h2");
+  const welcomeMessage = document.createElement("h3");
   welcomeMessage.classList.add("portfolioMessage");
-  welcomeMessage.innerText = `Description on portfolio coming here..`;
-
-  portfolioSection.appendChild(welcomeMessage);
-  mainSection.appendChild(portfolioSection);
+  welcomeMessage.innerText = `A collection of some things I've created.`;
 
   const buttonContainer = document.createElement("div");
   buttonContainer.classList.add("buttonContainer");
@@ -41,5 +38,7 @@ export function displayProjects() {
   buttonContainer.appendChild(websitesBtn);
   buttonContainer.appendChild(showcaseBtn);
   portfolioSection.appendChild(buttonContainer);
+  portfolioSection.appendChild(welcomeMessage);
+  mainSection.appendChild(portfolioSection);
   mainSection.appendChild(portfolioSection);
 }

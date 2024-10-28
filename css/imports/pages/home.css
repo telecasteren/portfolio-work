@@ -37,11 +37,11 @@ Landing | Home page styles
 }
 
 .emailIcon:hover {
-  transform: translate(-10%, 10%) scale(1.2);
+  transform: translate(5%, -5%) scale(1.2);
 }
 
 .fa-regular.fa-envelope.fa-2xl:hover {
-  color: var(--color-four) !important;
+  color: var(--color-three) !important;
 }
 
 .landingSection,
@@ -53,6 +53,9 @@ Landing | Home page styles
 }
 
 .landingTitle {
+  font-family: "Italiana";
+  font-weight: 400;
+  font-style: normal;
   text-align: left;
   margin-bottom: 0;
   margin-left: 6%;
@@ -64,10 +67,14 @@ Landing | Home page styles
   font-size: 1rem;
   margin: 2%;
   max-width: 1000px;
+
+  font-family: "Franklin Gothic Medium", sans-serif;
+  font-style: normal;
 }
 
 .topText p {
   color: var(--primary);
+  font-weight: bolder;
 }
 
 .imgDiv-landing {
@@ -82,7 +89,7 @@ Landing | Home page styles
   border: 4px solid;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .landingSection,
   .showcaseSection {
     grid-template-columns: 1fr;
@@ -92,7 +99,11 @@ Landing | Home page styles
   }
 
   .topText {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .topText p {
+    font-size: 0.9rem;
   }
 }
 
@@ -111,10 +122,9 @@ Landing | Home page styles
 
 .columnGrid {
   justify-self: center;
-
   width: 100px;
   height: 100px;
-  background-color: var(--secondary);
+  background-color: var(--color-three);
 }
 
 /*- Contact section -*/

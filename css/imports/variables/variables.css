@@ -7,13 +7,16 @@
   /*- Button color-map -*/
   --color-one: #0000ff;
   --color-two: #00ff22;
-  --color-three: #ff0000;
-  --color-four: #ffb700;
+  --color-three: #ffb700;
+  --color-four: #ff0000;
 
-  --draw-btn: #fcbc45; /* original yellow: #ffe593; */
-  --border-btn: #58afd1;
+  /* Button color-hover */
+  --color-two-hover: #ff00dd;
+  --color-four-hover: #00ffff;
 
-  --purple: #1f1a25;
+  /* TEST COLORS*/
+  /* --purple: #1f1a25; */
+  /* --draw-btn: #fcbc45; */
 
   /*- special actions -*/
   --alert-box-shadow: rgba(0, 0, 0, 0.3);
