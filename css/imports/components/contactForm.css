@@ -14,7 +14,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: var(--footer-grey);
+  background-color: var(--secondary);
   color: var(--background);
   padding: 12px 20px;
   border: none;
@@ -24,7 +24,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: var(--background);
-  color: var(--footer-grey);
+  color: var(--secondary);
 }
 
 .form-container {

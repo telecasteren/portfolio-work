@@ -53,7 +53,7 @@ Landing | Home page styles
 }
 
 .landingTitle {
-  font-family: "Italiana";
+  font-family: "Marcellus";
   font-weight: 400;
   font-style: normal;
   text-align: left;
@@ -64,17 +64,18 @@ Landing | Home page styles
 .topText {
   justify-self: center;
   align-self: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin: 2%;
   max-width: 1000px;
 
-  font-family: "Franklin Gothic Medium", sans-serif;
-  font-style: normal;
+  font-family: sans-serif;
+  font-style: lighter;
 }
 
 .topText p {
   color: var(--primary);
   font-weight: bolder;
+  font-size: 1rem;
 }
 
 .imgDiv-landing {

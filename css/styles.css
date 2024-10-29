@@ -10,6 +10,7 @@
 @import url(imports/components/button-styles/buttons.css);
 @import url(imports/components/button-styles/drawBorderBtn.css);
 @import url(imports/components/button-styles/lineButton.css);
+@import url(imports/components/button-styles/uniqueColorClass.css);
 
 /*- PAGES -*/
 @import url(imports/pages/news.css);
@@ -17,13 +18,15 @@
 @import url(imports/pages/portfolio.css);
 @import url(imports/pages/biography.css);
 
+/*- FONTS -*/
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 /*----------
 Global / common styles
 ---------------------------------*/
 
 body {
-  font-family: "Franklin Gothic Medium", sans-serif;
-  font-weight: lighter;
+  font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
 }

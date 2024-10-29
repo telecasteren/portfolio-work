@@ -58,6 +58,7 @@ Biography page
   border-radius: 0;
   border: 2px solid var(--faded);
   background-color: var(--faded);
+  font-size: 1rem;
   color: var(--primary);
   text-align: left;
   margin-left: 0;
@@ -66,6 +67,7 @@ Biography page
   width: 100%;
   top: 0;
   z-index: 1;
+  cursor: pointer;
 }
 
 .textButton:hover {

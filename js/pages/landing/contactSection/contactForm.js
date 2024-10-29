@@ -8,7 +8,7 @@ export function contactForm() {
   formContainer.className = "form-container";
 
   const form = document.createElement("form");
-  form.action = "/action_page.php";
+  // form.action = "/action_page.php";
 
   function createInput(
     type,

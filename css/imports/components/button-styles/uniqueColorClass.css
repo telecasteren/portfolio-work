@@ -1,0 +1,101 @@
+/*- COLOR-ONE -*/
+.button.drawBtn.color-one {
+  color: var(--color-one) !important;
+  box-shadow: inset 0 0 0 4px var(--color-one);
+}
+
+.drawBtn.color-one:hover {
+  color: var(--color-three) !important;
+}
+
+.drawBtn.color-one:hover::before,
+.drawBtn.color-one:hover::after {
+  border-color: var(--color-three);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/*- COLOR-TWO -*/
+.button.drawBtn.color-two {
+  color: var(--color-two) !important;
+  box-shadow: inset 0 0 0 4px var(--color-two);
+}
+
+.drawBtn.color-two:hover {
+  color: var(--color-two-hover) !important;
+}
+
+.drawBtn.color-two:hover {
+  color: var(--color-two-hover);
+}
+
+.drawBtn.color-two:hover::before,
+.drawBtn.color-two:hover::after {
+  border-color: var(--color-two-hover);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/*- COLOR-THREE -*/
+.button.drawBtn.color-three {
+  color: var(--color-three) !important;
+  box-shadow: inset 0 0 0 4px var(--color-three);
+}
+
+.drawBtn.color-three:hover {
+  color: var(--color-one) !important;
+}
+
+.drawBtn.color-three:hover {
+  color: var(--color-one);
+}
+
+.drawBtn.color-three:hover::before,
+.drawBtn.color-three:hover::after {
+  border-color: var(--color-one);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/*- COLOR-FOUR -*/
+.button.drawBtn.color-four {
+  color: var(--color-four) !important;
+  box-shadow: inset 0 0 0 4px var(--color-four);
+}
+
+.drawBtn.color-four:hover {
+  color: var(--color-four-hover) !important;
+}
+
+.drawBtn.color-four:hover {
+  color: var(--color-four-hover);
+}
+
+.drawBtn.color-four:hover::before,
+.drawBtn.color-four:hover::after {
+  border-color: var(--color-four-hover);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.drawBtn.color-one:hover::before,
+.drawBtn.color-two:hover::before,
+.drawBtn.color-three:hover::before,
+.drawBtn.color-four:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.drawBtn.color-one:hover::after,
+.drawBtn.color-two:hover::after,
+.drawBtn.color-three:hover::after,
+.drawBtn.color-four:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}

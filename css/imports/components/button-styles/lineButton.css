@@ -1,9 +1,10 @@
 .btn {
   color: var(--secondary) !important;
   font-weight: 400;
+  font-size: 1.5rem;
   line-height: 45px;
   margin: 0 0 2em;
-  max-width: 250px;
+  max-width: 300px;
   position: relative;
   width: 100%;
   cursor: pointer;
