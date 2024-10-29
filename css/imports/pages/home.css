@@ -99,6 +99,10 @@ Landing | Home page styles
     margin: 5%;
   }
 
+  .landingTitle {
+    font-size: 300%;
+  }
+
   .topText {
     font-size: 0.8rem;
   }
