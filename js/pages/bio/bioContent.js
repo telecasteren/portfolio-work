@@ -3,11 +3,11 @@ import { mainSection } from "../../data/constants.js";
 import { displayBioText } from "./sections.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  topContent();
+  topBioContent();
   displayBioText();
 });
 
-function topContent() {
+function topBioContent() {
   const container = document.createElement("div");
   const imgDiv = document.createElement("div");
   const imgElement = document.createElement("img");

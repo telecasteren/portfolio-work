@@ -1,16 +1,66 @@
-export const bioText = {
-  paragraphTitles: {
-    title1: "Long story short,",
-    title2: "Away from the screen,",
-    title3: "My work,",
-  },
+// export const bioText = {
+//   paragraphTitles: {
+//     title1: "Long story short,",
+//     title2: "Away from the screen,",
+//     title3: "My work,",
+//     title4: "Fun facts,",
+//   },
 
-  paragraphText: {
-    paragraph1:
-      "Born in 1991, I feel lucky to have lived through our world’s transition from analog to digital as we know it today. Growing up in a small town on the southeast side of Norway, I never really saw myself going anywhere, living in between the sound of the school bell chiming. I was all about that punk rock environment, grungy basement jams with our “crew”, spending all our allowance money going to concerts.\nWhen I turned 16, I started working in “the” city coffee shop, and by the time I was 18, I was there full-time. Had to find a way to pay for all the concerts and LP’s I consumed. But, I worked hard, took some coffee courses, and I was actually very lucky to be taught by that era’s Norwegian World Barista. I never began competing professionally myself though. Why? Despite my outgoing work environment and social life, I have always been quite introverted when it comes to such. Gaining a deeper understanding of what that meant throughout the years, I think I finally found my true aspirations in life. And it wasn’t competing.\nI can admit that I am a fineschmecker when it comes to food and drinks. I do appreciate the subtleties and intricacies of good quality produce. It originates from my days as a Barista in the Specialty Coffee Industry I guess. Well, I think it’s safe to say my fellow ex-colleagues are “victims” of the same sins. 😉",
-    paragraph2:
-      "I love traveling and engaging in outdoor activities. I also work out. And I can let you in on a little secret that I recently rediscovered skating.. And when my girlfriend and I went to Bali, I seemed to enjoy surfing as well. All truth be told, I am not skilled at either. Not even a little.. But what matters most is the fun I have along the way, right?!",
-    paragraph3: ".....",
+//   paragraphText: {
+//     bulletpoint1:
+//       "Born in 1991 and raised on heavy metal and punk rock music. 🤘🏼",
+//     bulletpoint2:
+//       "Spending all my teenage allowance on concerts, records and instruments. 🎶",
+//     bulletpoint3:
+//       "Worked in the specialty coffee industry for approx. 14 years (ages 15.25 to 29.25).",
+//     bulletpoint4:
+//       "When it comes to food and drinks, I'll admit I'm a feinschmecker. Good quality to the people!",
+//     bulletpoint5:
+//       "I love being in hands-on creative- and learning environments.",
+//     bulletpoint6: "Working out. 🏋🏼‍♂️",
+//     bulletpoint7: "Traveling and exploring the world. 🌏",
+//     bulletpoint8:
+//       "Learn new stuff — although often leading me back to the screen. 🤓",
+//     bulletpoint9:
+//       "Inspired by nature, I try to bring natural elements into my work.",
+//     bulletpoint10:
+//       "The French say “Mise an place” — Everything in place. I'm a fan of structure.",
+//     bulletpoint11:
+//       "Achieving truly well directed interactive systems for humans is a passion of mine.",
+//     bulletpoint12:
+//       "I like keeping things simple, so my general approach is that “less is more”.",
+//   },
+// };
+// export default bioText;
+
+const bioText = [
+  {
+    title: "Long story short,",
+    bullets: [
+      "Born in 1991 and raised on heavy metal and punk rock music. 🤘🏼",
+      "Spending all my teenage allowance on concerts, records, and instruments. 🎶",
+      "Worked in the specialty coffee industry for approx. 14 years (ages 15.25 to 29.25).",
+      "When it comes to food and drinks, I'll admit I'm a feinschmecker. Good quality to the people!",
+      "I love being in hands-on creative- and learning environments.",
+    ],
   },
-};
+  {
+    title: "Away from the screen,",
+    bullets: [
+      "Working out. 🏋🏼‍♂️",
+      "Traveling and exploring the world. 🌏",
+      "Learn new stuff — although often leading me back to the screen. 🤓",
+    ],
+  },
+  {
+    title: "My work,",
+    bullets: [
+      "Inspired by nature, I try to bring natural elements into my work.",
+      "The French say “Mise an place” — Everything in place. I'm a fan of structure.",
+      "Achieving truly well-directed interactive systems for humans is a passion of mine.",
+      "I like keeping things simple, so my general approach is that “less is more”.",
+    ],
+  },
+];
+
 export default bioText;

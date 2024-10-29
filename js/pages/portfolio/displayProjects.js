@@ -30,8 +30,14 @@ export function displayProjects() {
   showcaseBtn.innerText = "Showcases";
 
   showcaseBtn.addEventListener("click", () => {
-    const description = document.createElement("h3");
-    description.innerText = "No showcases to display yet..";
+    welcomeMessage.style.transition = "transform 0.3s ease";
+    welcomeMessage.style.transform = "scaleX(0)";
+
+    setTimeout(() => {
+      welcomeMessage.innerText = "No showcases to display yet..";
+      welcomeMessage.style.transform = "scaleX(1)";
+    }, 300);
+
     mainSection.appendChild(description);
   });
 
