@@ -49,7 +49,7 @@ Landing | Home page styles
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 5%;
+  margin: 10%;
 }
 
 .landingTitle {
