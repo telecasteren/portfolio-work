@@ -63,9 +63,12 @@ p {
 .main-section {
   display: grid;
   width: 100vw;
-  margin: 4% 2% 120px 2%;
+  /* margin: 4% 2% 120px 2%; */
   justify-self: center;
   padding-bottom: 20%;
+
+  margin: 5%;
+  margin-top: 4%;
 }
 
 @media screen and (max-width: 600px) {

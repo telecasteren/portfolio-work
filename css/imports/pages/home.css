@@ -130,6 +130,7 @@ Landing | Home page styles
   width: 100px;
   height: 100px;
   background-color: var(--color-three);
+  border-radius: 4px;
 }
 
 /*- Contact section -*/
