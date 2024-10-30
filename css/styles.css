@@ -29,12 +29,12 @@ body {
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
   width: 100vw;
   height: 100vw;
-  overflow-x: hidden;
   box-sizing: border-box;
   background-color: var(--background);
 }
@@ -62,17 +62,14 @@ p {
 .main-section {
   display: grid;
   width: 100vw;
-  /* margin: 4% 2% 120px 2%; */
   justify-self: center;
   padding-bottom: 20%;
 
-  /* margin: 5%; */
   margin-top: 4%;
 }
 
 @media screen and (max-width: 600px) {
   .main-section {
-    /* margin: 5%; */
     padding-bottom: 50%;
   }
 }
