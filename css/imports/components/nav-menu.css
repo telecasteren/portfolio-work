@@ -1,11 +1,10 @@
 nav.nav-bar {
   margin-top: 20px;
-  margin-left: 2%;
 }
 
 nav li {
   font-size: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   list-style-type: none;
   color: var(--secondary);
 }
@@ -23,6 +22,10 @@ Media queries
 --------------*/
 
 @media screen and (min-width: 600px) {
+  nav.nav-bar {
+    margin-left: 2%;
+  }
+
   nav li {
     font-size: 22px;
     margin-right: 20px;

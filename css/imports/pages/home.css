@@ -30,7 +30,7 @@ Landing | Home page styles
 
 .emailIcon {
   position: absolute;
-  top: 5%;
+  top: 4%;
   right: 5%;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -96,7 +96,6 @@ Landing | Home page styles
     grid-template-columns: 1fr;
     justify-self: center;
     align-items: center;
-    margin: 5%;
   }
 
   .landingTitle {
@@ -117,7 +116,7 @@ Landing | Home page styles
 .showcaseSection {
   background-color: var(--primary);
   width: 100%;
-  height: 100%;
+  height: 200px;
   justify-self: center;
 
   opacity: 1;
@@ -136,11 +135,11 @@ Landing | Home page styles
 /*- Contact section -*/
 
 .contact-section {
-  margin: 10%;
+  /* margin: 10%; */
   justify-self: center;
 }
 
 .contactButton {
-  margin-top: 10%;
+  margin-top: 1%;
   justify-self: center;
 }
