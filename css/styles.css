@@ -37,6 +37,7 @@ html {
   height: 100vw;
   box-sizing: border-box;
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 * {
@@ -64,7 +65,7 @@ p {
   width: 100vw;
   justify-self: center;
   padding-bottom: 20%;
-
+  margin: 5%;
   margin-top: 4%;
 }
 
