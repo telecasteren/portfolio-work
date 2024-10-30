@@ -90,27 +90,6 @@ Landing | Home page styles
   border: 4px solid;
 }
 
-@media screen and (max-width: 600px) {
-  .landingSection,
-  .showcaseSection {
-    grid-template-columns: 1fr;
-    justify-self: center;
-    align-items: center;
-  }
-
-  .landingTitle {
-    font-size: 300%;
-  }
-
-  .topText {
-    font-size: 0.8rem;
-  }
-
-  .topText p {
-    font-size: 0.9rem;
-  }
-}
-
 /*- Showcase section -*/
 
 .showcaseSection {
@@ -135,11 +114,39 @@ Landing | Home page styles
 /*- Contact section -*/
 
 .contact-section {
-  /* margin: 10%; */
+  margin: 10%;
   justify-self: center;
 }
 
 .contactButton {
   margin-top: 1%;
   justify-self: center;
+}
+
+/*- Media screens -*/
+
+@media screen and (max-width: 600px) {
+  .emailIcon {
+    right: 10%;
+  }
+
+  .landingSection,
+  .showcaseSection {
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landingTitle {
+    font-size: 300%;
+  }
+
+  .topText {
+    font-size: 0.8rem;
+  }
+
+  .topText p {
+    font-size: 0.9rem;
+  }
 }
