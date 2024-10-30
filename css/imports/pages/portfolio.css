@@ -48,7 +48,7 @@ Portfolio page
   }
 
   .portfolioSection {
-    margin: 5% 5%;
+    /* margin: 5% 5%; */
     justify-self: center;
     grid-template-columns: 1fr;
   }

@@ -66,13 +66,13 @@ p {
   justify-self: center;
   padding-bottom: 20%;
 
-  margin: 5%;
+  /* margin: 5%; */
   margin-top: 4%;
 }
 
 @media screen and (max-width: 600px) {
   .main-section {
-    margin: 5%;
+    /* margin: 5%; */
     padding-bottom: 50%;
   }
 }
