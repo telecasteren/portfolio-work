@@ -8,8 +8,8 @@ export function contactForm() {
   formContainer.className = "form-container";
 
   const form = document.createElement("form");
-  form.action = "https://formspree.io/f/mvgorgrq";
-  form.method = "POST";
+  // form.action = "https://formspree.io/f/mvgorgrq";
+  // form.method = "POST";
 
   function createInput(
     type,

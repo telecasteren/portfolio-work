@@ -44,10 +44,34 @@ export function displayContactForm(getInTouchBtn) {
     }
 
     const form = document.querySelector("form");
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      alertMessage("Thanks, I'll be sure to get back to you soon!", "info");
+      const formData = new FormData(form);
+      const formContainer = document.querySelector(".form-container");
+
+      try {
+        const response = await fetch("https://formspree.io/f/mvgorgrq", {
+          method: "POST",
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          alertMessage("Thanks, I'll be sure to get back to you soon!", "info");
+        } else {
+          alertMessage(
+            "Ooops, couldn't send your inquiry right now. Try again later!"
+          );
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+        alertMessage(
+          "Ooops, couldn't send your inquiry right now. Try again later!"
+        );
+      }
+
+      // alertMessage("Thanks, I'll be sure to get back to you soon!", "info");
 
       formElement.style.opacity = "0";
       formElement.style.visibility = "hidden";
