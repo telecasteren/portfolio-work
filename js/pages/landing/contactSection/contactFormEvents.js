@@ -33,6 +33,7 @@ export function displayContactForm(getInTouchBtn) {
     contactForm();
 
     const formElement = document.querySelector(".form-container");
+
     if (formElement) {
       formElement.style.opacity = "0";
       formElement.style.transition = "opacity 1s ease-in-out";
@@ -48,7 +49,6 @@ export function displayContactForm(getInTouchBtn) {
       e.preventDefault();
 
       const formData = new FormData(form);
-      const formContainer = document.querySelector(".form-container");
 
       try {
         const response = await fetch("https://formspree.io/f/mvgorgrq", {
@@ -70,8 +70,6 @@ export function displayContactForm(getInTouchBtn) {
           "Ooops, couldn't send your inquiry right now. Try again later!"
         );
       }
-
-      // alertMessage("Thanks, I'll be sure to get back to you soon!", "info");
 
       formElement.style.opacity = "0";
       formElement.style.visibility = "hidden";

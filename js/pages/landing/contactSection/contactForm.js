@@ -8,8 +8,6 @@ export function contactForm() {
   formContainer.className = "form-container";
 
   const form = document.createElement("form");
-  // form.action = "https://formspree.io/f/mvgorgrq";
-  // form.method = "POST";
 
   function createInput(
     type,
@@ -62,7 +60,7 @@ export function contactForm() {
 
   const options = [
     { value: "required", text: "Subject" },
-    { value: "hello", text: "Talk about projects" },
+    { value: "projects", text: "Talk about projects" },
     { value: "work", text: "Hire me" },
     { value: "other", text: "Other" },
   ];
