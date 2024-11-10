@@ -1,16 +1,18 @@
 /*- COMPONENTS -*/
 @import url(imports/variables/variables.css);
-@import url(imports/components/messages.css);
-@import url(imports/components/contactForm.css);
-@import url(imports/components/spinner.css);
-@import url(imports/components/footer.css);
-@import url(imports/components/nav-menu.css);
+@import url(imports/components/UTILS/messages.css);
+@import url(imports/components/MAIN/contactForm.css);
+@import url(imports/components/UTILS/spinner.css);
+@import url(imports/components/BOTTOM/footer.css);
+@import url(imports/components/TOP/nav-menu.css);
+@import url(imports/components/MAIN/email-icon.css);
+@import url(imports/components/TOP/colorModeToggle.css);
 
 /*- BUTTONS -*/
-@import url(imports/components/button-styles/buttons.css);
-@import url(imports/components/button-styles/drawBorderBtn.css);
-@import url(imports/components/button-styles/lineButton.css);
-@import url(imports/components/button-styles/uniqueColorClass.css);
+@import url(imports/components/MAIN/button-styles/buttons.css);
+@import url(imports/components/MAIN/button-styles/drawBorderBtn.css);
+@import url(imports/components/MAIN/button-styles/lineButton.css);
+@import url(imports/components/MAIN/button-styles/uniqueColorClass.css);
 
 /*- PAGES -*/
 @import url(imports/pages/news.css);
@@ -30,13 +32,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: var(--background);
 }
 
 html {
   width: 100vw;
   height: 100vw;
   box-sizing: border-box;
-  background-color: var(--background);
 }
 
 * {
@@ -55,8 +57,13 @@ h1 {
   margin-bottom: 5%;
 }
 
+h2 {
+  color: var(--tertiary);
+}
+
 p {
   font-family: sans-serif;
+  color: var(--primary);
 }
 
 .main-section {

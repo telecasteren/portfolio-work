@@ -28,22 +28,6 @@ Landing | Home page styles
 
 /*- Top content section -*/
 
-.emailIcon {
-  position: absolute;
-  top: 4%;
-  right: 5%;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.emailIcon:hover {
-  transform: translate(5%, -5%) scale(1.2);
-}
-
-.fa-regular.fa-envelope.fa-2xl:hover {
-  color: var(--color-three) !important;
-}
-
 .landingSection,
 .showcaseSection {
   display: grid;
@@ -126,10 +110,6 @@ Landing | Home page styles
 /*- Media screens -*/
 
 @media screen and (max-width: 600px) {
-  .emailIcon {
-    right: 10%;
-  }
-
   .landingSection,
   .showcaseSection {
     grid-template-columns: 1fr;

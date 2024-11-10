@@ -6,6 +6,8 @@ import { landingContent, portfolioContent } from "/js/data/constants.js";
 import { contactFormEvents } from "/js/pages/landing/contactSection/contactFormEvents.js";
 import { iconEvent } from "/js/pages/landing/contactSection/iconEvent.js";
 import { displayProjects } from "/js/pages/portfolio/displayProjects.js";
+import { createColorModeToggle } from "/js/components/staticUI/colorMode/colorModeToggle.js";
+import { colorModeToggleEvents } from "/js/components/staticUI/colorMode/colorModeEvents.js";
 
 // display footer upon scroll
 document.addEventListener("scroll", function () {
@@ -13,6 +15,9 @@ document.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  createColorModeToggle();
+  colorModeToggleEvents();
+
   if (landingContent) {
     titleMessage("Hello there!", "landingTitle");
     topContent();

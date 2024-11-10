@@ -1,0 +1,21 @@
+.emailIcon {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.emailIcon:hover {
+  transform: translate(5%, -5%) scale(1.2);
+}
+
+.fa-regular.fa-envelope.fa-2xl:hover {
+  color: var(--color-three) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .emailIcon {
+    right: 10%;
+  }
+}

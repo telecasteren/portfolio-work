@@ -42,6 +42,7 @@ Biography page
 }
 
 .bio-img {
+  border-radius: 4px;
   margin-top: 8%;
   margin-left: 6%;
   width: 400px;
@@ -88,6 +89,10 @@ Biography page
   max-height: 1200px;
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
+}
+
+.listItem {
+  color: var(--primary);
 }
 
 /*------------

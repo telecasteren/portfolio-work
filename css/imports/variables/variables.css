@@ -1,7 +1,9 @@
+/*- DEFAULT COLOR MODE: LIGHT -*/
 :root {
   --faded: #3c9f020e;
   --primary: #829d72;
   --secondary: #344f23;
+  --tertiary: #1a2a10;
   --background: #fffcf6;
 
   /*- Button color-map -*/
@@ -13,10 +15,6 @@
   /* Button color-hover */
   --color-two-hover: #ff00dd;
   --color-four-hover: #00ffff;
-
-  /* TEST COLORS*/
-  /* --purple: #1f1a25; */
-  /* --draw-btn: #fcbc45; */
 
   /*- special actions -*/
   --alert-box-shadow: rgba(0, 0, 0, 0.3);
@@ -30,3 +28,37 @@
 
   font-size: calc(1rem + 0.25vw);
 }
+
+/*- COLOR MODE: LIGHT nature -*/
+body.light {
+  --faded: #3c9f020e;
+  --primary: #829d72;
+  --secondary: #344f23;
+  --tertiary: #1a2a10;
+  --background: #fffcf6;
+}
+
+/*- COLOR MODE: DARK soft orange -*/
+body.dark {
+  --faded: #2a4b010e;
+  --primary: #f3efe7;
+  --secondary: #a97900;
+  --tertiary: #a97900;
+  --background: #1a1a1a;
+}
+
+/*- COLOR MODE: DARK high contrast -*/
+/* body.dark {
+  --faded: #1f39000f;
+  --primary: #4e634a;
+  --secondary: #1d2813;
+  --background: #0d0d0d;
+} */
+
+/*- COLOR MODE: DARK warm -*/
+/* body.dark {
+  --faded: #3527010f;
+  --primary: #646b5b;
+  --secondary: #222c18;
+  --background: #141414;
+} */
