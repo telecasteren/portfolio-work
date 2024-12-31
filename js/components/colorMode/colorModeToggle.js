@@ -8,6 +8,7 @@ export function createColorModeToggle() {
   const toggleInput = document.createElement("input");
   toggleInput.classList.add("checkbox-switch", "dark-checkbox");
   toggleInput.type = "checkbox";
+  toggleInput.id = "checkbox";
 
   const toggleSwitch = document.createElement("span");
   toggleSwitch.classList.add("toggle-switch");

@@ -7,7 +7,7 @@ export const portfolioContent = document.querySelector(".portfolio-content");
 // URL's:
 export const projectURLs = {
   project1: "https://gamehub-tele.netlify.app/",
-  project2: "https://telecasteren-semester1.netlify.app/",
+  project2: "https://unwired.netlify.app/",
   project3: "https://countdown-jam.netlify.app/",
-  project4: "/pages/news/",
+  project4: "https://telecasteren-semester1.netlify.app/",
 };

@@ -1,7 +1,7 @@
 const experience = {
   skills: {
-    Languages: ["Javascript", "HTML", "CSS", "MYSQL", "SQL"],
-    Frameworks: ["React"],
+    Languages: ["Javascript", "HTML", "CSS", "SQL", "Rust"],
+    Frameworks: ["React", "Tailwind", "Bootstrap", "MUI"],
     CMS: ["WordPress"],
     Business: [
       "Project management",

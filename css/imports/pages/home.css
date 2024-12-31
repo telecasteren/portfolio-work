@@ -2,34 +2,9 @@
 Landing | Home page styles
 -------------------------*/
 
-/* .triangle-img {
-  display: grid;
-  justify-content: center;
-  margin-bottom: 5%;
-  overflow: hidden;
-}
-
-.triangle-img img {
-  width: 300px;
-  height: auto;
-  animation: scrollIn 1.8s ease-in-out;
-}
-
-@keyframes scrollIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-} */
-
 /*- Top content section -*/
 
-.landingSection,
-.showcaseSection {
+.landingSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -77,6 +52,10 @@ Landing | Home page styles
 /*- Showcase section -*/
 
 .showcaseSection {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
   background-color: var(--primary);
   width: 100%;
   height: 200px;
@@ -87,12 +66,27 @@ Landing | Home page styles
   visibility: visible;
 }
 
-.columnGrid {
+.sectionContentDiv {
   justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+  height: auto;
+  margin: 5%;
+}
+
+.columnGrid {
   width: 100px;
   height: 100px;
   background-color: var(--color-three);
   border-radius: 4px;
+  justify-self: center;
+  align-self: center;
+}
+
+.listUL {
+  /* list-style: none; */
+  color: var(--background);
 }
 
 /*- Contact section -*/
@@ -117,6 +111,11 @@ Landing | Home page styles
     align-items: center;
     justify-content: center;
     margin: 5%;
+  }
+
+  .columnGrid,
+  .listUL {
+    justify-self: center;
   }
 
   .landingTitle {
