@@ -3,7 +3,6 @@ export function createColorModeToggle() {
 
   const toggleLabel = document.createElement("label");
   toggleLabel.classList.add("switch", "dark-toggle");
-  toggleLabel.innerText = "Toggle color mode";
 
   const toggleInput = document.createElement("input");
   toggleInput.classList.add("checkbox-switch", "dark-checkbox");
@@ -16,4 +15,9 @@ export function createColorModeToggle() {
   toggleLabel.appendChild(toggleInput);
   toggleLabel.appendChild(toggleSwitch);
   colorModeSlider.appendChild(toggleLabel);
+
+  // DEbug
+  toggleInput.addEventListener("change", () => {
+    console.log("Checkbox checked:", toggleInput.checked);
+  });
 }

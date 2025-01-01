@@ -84,11 +84,6 @@ Landing | Home page styles
   align-self: center;
 }
 
-.listUL {
-  /* list-style: none; */
-  color: var(--background);
-}
-
 /*- Contact section -*/
 
 .contact-section {

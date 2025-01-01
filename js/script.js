@@ -8,6 +8,7 @@ import { iconEvent } from "/js/pages/landing/contactSection/iconEvent.js";
 import { displayProjects } from "/js/pages/portfolio/displayProjects.js";
 import { createColorModeToggle } from "/js/components/colorMode/colorModeToggle.js";
 import { colorModeToggleEvents } from "/js/components/colorMode/colorModeEvents.js";
+import { setSpecificColors } from "/js/data/helpers/setSpecificColors.js";
 
 // display footer upon scroll
 document.addEventListener("scroll", function () {
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showcaseSection();
     contactFormEvents();
     iconEvent();
+    setSpecificColors();
   }
 
   if (portfolioContent) {

@@ -1,4 +1,4 @@
-.colorModeSlider {
+/* .colorModeSlider {
   position: relative;
   display: flex;
   top: 10px;
@@ -48,10 +48,6 @@
   border: 3px solid var(--color-two-hover);
 }
 
-.checkbox-switch:checked + .toggle-switch::before {
-  /* background: #d5d5d5; */
-}
-
 .switch .toggle-switch::after,
 .switch .toggle-switch::before {
   content: "";
@@ -69,4 +65,51 @@
 .checkbox-switch:checked + .toggle-switch::after,
 .checkbox-switch:checked + .toggle-switch::before {
   background: var(--primary);
+} */
+
+/* Slider container */
+.colorModeSlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 50px auto;
+  width: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  background-color: var(--secondary);
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.checkbox-switch {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Slider switch ball */
+.toggle-switch {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+/* Move the ball to the other end when checked */
+.checkbox-switch:checked + .toggle-switch {
+  left: calc(100% - 35px);
 }

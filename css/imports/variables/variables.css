@@ -1,10 +1,11 @@
-/*- DEFAULT COLOR MODE: LIGHT -*/
+/*- DEFAULT COLOR MODE: DARK -*/
 :root {
-  /* --faded: #3c9f020e;
-  --primary: #829d72;
-  --secondary: #344f23;
-  --tertiary: #1a2a10;
-  --background: #fffcf6; */
+  --faded: #627f9e;
+  --primary: #4a6c8c;
+  --secondary: #3c4d65;
+  --tertiary: #9db7d7;
+  --background: #1d2a3d;
+  --text: #4a6c8c;
 
   /*- Button color-map -*/
   --color-one: #0000ff;
@@ -36,6 +37,7 @@ body.light {
   --secondary: #6f7e48;
   --tertiary: #4a5a31;
   --background: #eaf1e0;
+  --text: #4a5a31;
 }
 
 /*- COLOR MODE: DARK blue -*/
@@ -45,6 +47,7 @@ body.dark {
   --secondary: #3c4d65;
   --tertiary: #9db7d7;
   --background: #1d2a3d;
+  --text: #4a6c8c;
 }
 
 /*- COLOR MODE: LIGHT green -*/

@@ -1,4 +1,5 @@
 import { alertMessage } from "/js/components/validation/messages.js";
+import { setSpecificColors } from "/js/data/helpers/setSpecificColors.js";
 
 export function colorModeToggleEvents() {
   const toggleEvent = document.querySelector(".dark-toggle");
@@ -33,6 +34,7 @@ export function colorModeToggleEvents() {
 
   toggleEvent.addEventListener("change", (e) => {
     toggleEventColorMode();
+    setSpecificColors();
 
     localStorage.setItem("darkMode", checkbox.checked ? true : false);
   });

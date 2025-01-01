@@ -3,27 +3,27 @@ const bioText = [
     title: "Long story short,",
     bullets: [
       "Born in 1991 and raised on heavy metal and punk rock music. 🤘🏼",
-      "Spent all my teenage allowance on concerts, records, and instruments. 🎸🥁",
-      "Been in the specialty coffee industry for approx. 14 years (ages 15.25 to 29.25).",
-      "When it comes to food and drinks, I'll admit I'm a feinschmecker. Good quality to the people! ☕",
-      "I love being in hands-on creative- and learning environments. 💡",
+      "Spent my teenage years at concerts, listening to records, and playing instruments. 🎸🥁",
+      "Worked in the specialty coffee industry for about 14 years.",
+      "I love building things and I believe learning is the ultimate activity. 💡",
     ],
   },
   {
     title: "Away from the screen,",
     bullets: [
       "Working out. 🏋🏼‍♂️",
-      "Traveling and exploring the world. 🌏",
       "Music and concerts. 🎶",
+      "Travel and explore the world. 🌏",
+      "Spend quality time with my best friend, soon to be wife👰‍♀️",
     ],
   },
   {
     title: "My work,",
     bullets: [
       "Inspired by nature, I try to bring natural elements into my work. 🍃",
-      "The French say “Mise an place” — Everything in place. I'm a fan of structure. 🧬",
-      "Aiming to achieve well-directed interactive systems for humans.",
-      `Detailed, but keeping things simple, trying to break down problems to bite size chunks. Like the late Ludwig Mies said, "Less is more". 🏗️`,
+      "A fan of structure, “mise an place” — Everything in place. 🧬",
+      "Aim to achieve well-directed interactive systems for humans.",
+      "Detailed, but try to keep things simple, breaking down problems to bite size chunks. 🏗️",
     ],
   },
 ];

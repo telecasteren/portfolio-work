@@ -38,7 +38,7 @@ export function displayProjects() {
       welcomeMessage.style.transform = "scaleX(1)";
     }, 300);
 
-    mainSection.appendChild(description);
+    // mainSection.appendChild(description);
   });
 
   buttonContainer.appendChild(websitesBtn);
