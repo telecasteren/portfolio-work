@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 
-const imagesDir = path.join(__dirname, "Images");
+const imagesDir = path.join(__dirname, "images");
 const projectFiles = glob.sync(path.join(__dirname, "**/*.{html,css,js}"), {
   ignore: "node_modules/**",
 });

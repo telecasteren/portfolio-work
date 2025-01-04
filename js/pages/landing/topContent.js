@@ -16,7 +16,7 @@ export function topContent() {
   const imgElement = document.createElement("img");
   imgElement.classList.add("imgEl-landing");
   imgElement.alt = "Image of the website author";
-  imgElement.src = "/images/coffeeLembongan.jpeg";
+  imgElement.src = "/js/data/images/coffeeLembongan.jpeg";
 
   topSection.appendChild(topText);
   imgElDiv.appendChild(imgElement);

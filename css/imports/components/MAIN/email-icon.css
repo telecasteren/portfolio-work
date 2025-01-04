@@ -11,7 +11,7 @@
 }
 
 .fa-regular.fa-envelope.fa-2xl:hover {
-  color: var(--color-three) !important;
+  color: var(--accent-color) !important;
 }
 
 @media screen and (max-width: 600px) {

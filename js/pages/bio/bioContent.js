@@ -15,7 +15,7 @@ function topBioContent() {
   container.classList.add("bio-container");
   imgDiv.classList.add("bio-columns");
   imgElement.classList.add("bio-img");
-  imgElement.src = "/images/fineshmecker.jpeg";
+  imgElement.src = "/js/data/images/fineshmecker.jpeg";
   imgElement.alt = "A fineschmecker person drinking a cocktail";
 
   const titleDiv = document.createElement("div");

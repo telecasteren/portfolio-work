@@ -11,12 +11,12 @@ textarea {
   border-radius: 6px;
   border: 1px solid var(--alert-box-shadow);
   background-color: var(--background);
-  color: var(--text);
+  color: var(--form-text);
 }
 
 input[type="submit"] {
-  background-color: var(--secondary);
-  color: var(--background);
+  background-color: var(--background);
+  color: var(--form-text);
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
@@ -24,8 +24,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: var(--background);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--accent-color);
 }
 
 .form-container {
