@@ -13,5 +13,5 @@ export const projectURLs = {
 };
 
 // General
-export const NO_IMAGE_FOUND_IMG = "/js/data/images/triangle-symbol-light.png";
+export const NO_IMAGE_FOUND_IMG = "/resources/images/triangle-symbol-light.png";
 export const ALT_NOT_FOUND = "";

@@ -1,28 +1,42 @@
-import { mainSection } from "../../data/constants.js";
+import { mainSection } from "/js/data/constants.js";
 import { alertMessage } from "/js/components/validation/messages.js";
+import { fetchPosts } from "/js/data/services/fetchPosts.js";
 
 export async function textColumns() {
   try {
     const spinner = document.querySelector(".spinner");
-    const response = await fetch("/js/data/textFiles/newsColumns.json");
-    const data = await response.json();
+
+    const response = await fetchPosts();
+    const data = response;
 
     spinner.style.display = "none";
 
-    data.forEach((item, index) => {
+    const newsSection = document.createElement("div");
+    newsSection.classList.add("newsSection");
+
+    data.forEach((post) => {
       const columnDiv = document.createElement("div");
       columnDiv.classList.add("newsColumn");
+      columnDiv.dataset.postId = post.id;
 
       const titleElement = document.createElement("h2");
-      titleElement.innerHTML = item.title;
+      titleElement.innerHTML = post.title;
 
       const pElement = document.createElement("p");
-      pElement.id = `paragraph-${index}`;
-      pElement.innerHTML = item.paragraph.replace(/\n/g, "<br /><br />");
+      pElement.id = "postTextContent";
+      pElement.innerHTML = post.textContent;
+
+      const publishedDate = document.createElement("p");
+      publishedDate.id = "publishDate";
+      publishedDate.innerText = `Published: ${new Date(
+        post.publishDate
+      ).toLocaleDateString()}`;
 
       columnDiv.appendChild(titleElement);
       columnDiv.appendChild(pElement);
-      mainSection.appendChild(columnDiv);
+      columnDiv.appendChild(publishedDate);
+      newsSection.appendChild(columnDiv);
+      mainSection.appendChild(newsSection);
     });
   } catch (error) {
     alertMessage("Couldn't load text content", "error");
