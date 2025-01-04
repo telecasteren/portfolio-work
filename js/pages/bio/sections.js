@@ -1,6 +1,6 @@
-import { mainSection, spinner } from "/js/data/constants.js";
+import { mainSection, spinner } from "/js/data/general/constants.js";
 import { alertMessage } from "/js/components/validation/messages.js";
-import bioText from "../../data/objects/bioText.js";
+import bioText from "/js/data/services/objects/bioText.js";
 
 export function displayBioText() {
   mainSection.classList.add("bioMainSection");

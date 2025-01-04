@@ -1,5 +1,5 @@
-import { mainSection } from "../../data/constants.js";
-import projects from "/js/data/objects/projects.js";
+import { mainSection } from "/js/data/general/constants.js";
+import projects from "/js/data/services/objects/projects.js";
 import { renderPortfolio } from "/js/pages/portfolio/renderPortfolio.js";
 import { selectColorClass } from "/js/pages/portfolio/selectColorClass.js";
 
@@ -37,8 +37,6 @@ export function displayProjects() {
       welcomeMessage.innerText = "No showcases to display yet..";
       welcomeMessage.style.transform = "scaleX(1)";
     }, 300);
-
-    // mainSection.appendChild(description);
   });
 
   buttonContainer.appendChild(websitesBtn);

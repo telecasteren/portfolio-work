@@ -1,6 +1,6 @@
-import { mainSection } from "/js/data/constants.js";
+import { mainSection } from "/js/data/general/constants.js";
 import { alertMessage } from "/js/components/validation/messages.js";
-import { fetchPosts } from "/js/data/services/fetchPosts.js";
+import { fetchPosts } from "/js/data/services/api/fetchPosts.js";
 
 export async function textColumns() {
   try {

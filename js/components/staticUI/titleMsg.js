@@ -1,4 +1,4 @@
-import { mainSection } from "../../data/constants.js";
+import { mainSection } from "../../data/general/constants.js";
 
 // Page titles
 export function titleMessage(

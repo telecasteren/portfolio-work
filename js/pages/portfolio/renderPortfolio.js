@@ -1,4 +1,4 @@
-import { projectURLs, mainSection } from "../../data/constants.js";
+import { projectURLs, mainSection } from "../../data/general/constants.js";
 import { commonButton } from "../../components/staticUI/reusableButton.js";
 import { alertMessage } from "../../components/validation/messages.js";
 

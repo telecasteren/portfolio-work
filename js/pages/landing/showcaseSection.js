@@ -1,4 +1,4 @@
-import { mainSection } from "/js/data/constants.js";
+import { mainSection } from "/js/data/general/constants.js";
 
 export function showcaseSection() {
   const sectionElement = document.createElement("section");

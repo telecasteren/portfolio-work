@@ -1,4 +1,4 @@
-import { mainSection } from "/js/data/constants.js";
+import { mainSection } from "/js/data/general/constants.js";
 import { contactForm } from "/js/pages/landing/contactSection/contactForm.js";
 import { alertMessage } from "/js/components/validation/messages.js";
 import { commonButton } from "/js/components/staticUI/reusableButton.js";

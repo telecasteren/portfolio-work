@@ -1,5 +1,5 @@
 import { titleMessage } from "../../components/staticUI/titleMsg.js";
-import { mainSection } from "../../data/constants.js";
+import { mainSection } from "../../data/general/constants.js";
 import { displayBioText } from "./sections.js";
 
 document.addEventListener("DOMContentLoaded", function () {

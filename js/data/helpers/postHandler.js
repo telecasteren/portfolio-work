@@ -1,4 +1,7 @@
-import { NO_IMAGE_FOUND_IMG, ALT_NOT_FOUND } from "/js/data/constants.js";
+import {
+  NO_IMAGE_FOUND_IMG,
+  ALT_NOT_FOUND,
+} from "/js/data/general/constants.js";
 
 export const handlePost = (post) => {
   const featuredMedia = post._embedded?.["wp:featuredmedia"]?.[0];
