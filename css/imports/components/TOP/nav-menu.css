@@ -23,7 +23,7 @@ Media queries
 
 @media screen and (min-width: 600px) {
   nav.nav-bar {
-    margin-left: 2%;
+    margin-left: 6%;
   }
 
   nav li {

@@ -5,7 +5,7 @@
 @import url(imports/components/UTILS/spinner.css);
 @import url(imports/components/BOTTOM/footer.css);
 @import url(imports/components/TOP/nav-menu.css);
-@import url(imports/components/MAIN/email-icon.css);
+@import url(imports/components/TOP/email-icon.css);
 @import url(imports/components/TOP/colorModeToggle.css);
 
 /*- BUTTONS -*/
@@ -67,11 +67,11 @@ p {
 }
 
 .main-section {
-  display: grid;
-  width: 100vw;
-  justify-self: center;
-  padding-bottom: 20%;
+  /* display: grid; */
+  /* width: 100vw; */
+  /* justify-self: center; */
 
+  padding-bottom: 20%;
   margin-top: 4%;
 }
 
@@ -79,4 +79,12 @@ p {
   .main-section {
     padding-bottom: 50%;
   }
+}
+
+.landing-content,
+.bioMainSection,
+.news-content {
+  display: grid;
+  justify-content: center;
+  width: 100vw;
 }

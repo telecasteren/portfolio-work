@@ -44,3 +44,15 @@
 .checkbox-switch:checked + .toggle-switch {
   left: calc(100% - 35px);
 }
+
+@media screen and (max-width: 1068px) {
+  .colorModeSlider {
+    margin: 30px 30px auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .colorModeSlider {
+    margin-left: 7%;
+  }
+}
