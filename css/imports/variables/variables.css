@@ -20,15 +20,17 @@
   --color-three-hover: #ff00dd;
   --color-four-hover: #00ffff;
 
-  /*- special actions -*/
+  /*- Pop-up alert -*/
   --alert-box-shadow: rgba(0, 0, 0, 0.3);
   --alert-info: rgba(0, 0, 0, 0.5);
   --alert-success: rgba(19, 72, 17, 0.367);
   --alert-warning: rgba(131, 100, 0, 0.523);
   --alert-error: rgba(139, 0, 0, 0.302);
-  --footer-white: #fffcf684;
-  --footer-grey: #3a3c44;
-  --footer-shadow: rgb(45, 46, 51, 0.1);
+
+  /* Footer */
+  --footer-white: #9db7d7;
+  --footer-grey: #1d2a3d;
+  --footer-shadow: #1d2a3d;
 
   font-size: calc(1rem + 0.25vw);
 }
@@ -42,6 +44,10 @@ body.light {
   --background: #eaf1e0;
   --text: #4a5a31;
   --form-text: #4a5a31;
+
+  --footer-white: #4a5a31;
+  --footer-grey: #eaf1e0;
+  --footer-shadow: #eaf1e0;
 }
 
 /*- COLOR MODE: DARK blue -*/
