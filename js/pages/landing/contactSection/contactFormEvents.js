@@ -4,6 +4,7 @@ import { alertMessage } from "/js/components/validation/messages.js";
 import { commonButton } from "/js/components/staticUI/reusableButton.js";
 
 export function contactFormEvents() {
+  const showcaseSection = document.querySelector(".showcaseSection");
   const getInTouchBtn = commonButton(
     "Get in touch!",
     "drawBtn contactButton",
@@ -15,7 +16,7 @@ export function contactFormEvents() {
     displayContactForm(getInTouchBtn);
   });
 
-  mainSection.appendChild(getInTouchBtn);
+  mainSection.insertBefore(getInTouchBtn, showcaseSection);
 }
 
 export function displayContactForm(getInTouchBtn) {
