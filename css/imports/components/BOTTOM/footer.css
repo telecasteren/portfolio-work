@@ -20,7 +20,6 @@ footer {
 footer span {
   font-size: 14px;
   color: var(--footer-white);
-  text-align: center;
 }
 
 footer span a {
@@ -70,16 +69,16 @@ Media queries for FOOTER
   footer {
     flex-direction: row;
   }
-}
 
-@media (min-width: 768px) {
+  footer span {
+    margin-left: 10%;
+  }
+
+  footer ul {
+    margin-right: 10%;
+  }
+
   footer ul li {
     margin-right: 24px;
-  }
-}
-
-@media (min-width: 640px) {
-  footer span {
-    text-align: left;
   }
 }
